@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body{
+            background-color: darkslategrey;
+            width: 100%;
+            height: 100%;
+        }
+        .main{
+            width: 900px;
+            height:500px;
+         
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+           /* left:250px ; */
+            
+        }
+        .main-box{
+            width: 200px;
+            height:250px;
+            background-color: rgb(36, 38, 41);
+            margin: 5px;
+            font-size: 250px;
+            font-weight: 900;
+            color: olivedrab;
+            text-shadow: 5px 5px 5px lightblue;
+            animation: animm 4s infinite;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #pic{
+            background-image: url(brdy11.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+      @keyframes animm {
+        0%{
+             transform: translateX(0);
+        }
+        50%{
+            transform: translateX(100px);
+        }
+        100%{
+             transform: translateX(0);
+        }
+        
+      }
+      .bal{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: hotpink;
+        animation: an 5s infinite;
+      }
+
+
+
+
+      @keyframes an {
+        0%{
+             transform: translateY(0);
+        }
+        50%{
+            transform: translateY(-900px);
+        }
+        100%{
+             transform: translateY(0);
+        }
+      
+        
+      }
+        
+    .bal::after{
+        content: ' ';
+        width: 1px;
+        height: 400px;
+        position: absolute;
+        left: 55px;
+        background-color:hotpink;
+
+    }
+
+    .row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    marquee{
+        color: aliceblue;
+        font-size: 100px;
+        font-weight: 400;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        left: 3px;
+        width: 100%;
+        height: 100px;
+    }
+
+    /* for phone */
+    /* =================================================== */
+      @media screen  and (max-width:480px) {
+      
+        .main{
+            width: 310px;
+            height:300px;
+         
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+           
+            top:100px;
+            
+        }
+        .main-box{
+            width: 60px;
+            height:150px;
+            background-color: rgb(36, 38, 41);
+            margin: 2px;
+            font-size: 140px;
+            font-weight: 900;
+            color: olivedrab;
+            text-shadow: 5px 5px 5px lightblue;
+          
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #pic{
+            background-image: url(brdy1.webp);
+            background-repeat: no-repeat;
+            background-position: center ;
+        }
+    
+        .bal{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: hotpink;
+        animation: ann 5s infinite;
+      }
+     
+        
+    .bal::after{
+        content: ' ';
+        width: 1px;
+        height: 150px;
+        position: absolute;
+        left: 23px;
+        background-color:hotpink;
+
+    }
+
+    .row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+    @keyframes ann {
+        0%{
+             transform: translateY(0);
+        }
+        50%{
+            transform: translateY(-450px);
+        }
+        100%{
+             transform: translateY(0);
+        }
+        
+      }
+      marquee{
+        color: aliceblue;
+        font-size: 80px;
+        font-weight: 200;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        left: 1px;
+        width: 500px;
+        height: 100px;
+    }
+        
+      }
+
+      
+
+        
+      
+
+
+
+
+
+
+
+
+      
+   
+        
+
+    </style>
+</head>
+<body>
+    <marquee behavior="scroll" bgcolor="hotpink">LITTLE SISTER</marquee>
+    <div class="main">
+        <div class="main-box">H</div>
+        <div class="main-box">p</div>
+        <div class="main-box">Y</div>
+        <div id="pic"class="main-box"></div>
+        <div class="main-box">B</div>
+        <div class="main-box">R</div>
+        <div class="main-box">d</div>
+        <div class="main-box">Y</div>
+        
+      
+    </div>
+    <div class="row">
+        <div class="bal"></div>
+        <div class="bal "></div>
+        <div class="bal"></div>
+    </div>
+  
+</body>
+</html>
